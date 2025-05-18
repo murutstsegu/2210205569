@@ -1,0 +1,137 @@
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+.hero {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+.hero .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  margin: 0.2rem 0;
+  font-size: 2rem;
+}
+.hero p {
+  margin-bottom: 1rem;
+}
+.btn-download {
+  display: inline-block;
+  background: white;
+  color: #007acc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-download:hover {
+  background: #e0e0e0;
+}
+section {
+  margin: 2rem 0;
+}
+h2 {
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.3rem;
+}
+.skill-list span {
+  display: inline-block;
+  background: #e0f3ff;
+  color: #007acc;
+  padding: 0.4rem 0.8rem;
+  margin: 0.4rem;
+  border-radius: 8px;
+}
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #eee;
+  font-size: 0.9rem;
+}
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+body.dark .hero {
+  background-color: #1e88e5;
+}
+body.dark .btn-download {
+  background: #f0f0f0;
+  color: #1e88e5;
+}
+body.dark .btn-download:hover {
+  background: #ccc;
+}
+body.dark .skill-list span {
+  background: #37474f;
+  color: #bbdefb;
+}
+body.dark .footer {
+  background: #1f1f1f;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p, .btn-download {
+    font-size: 0.9rem;
+  }
+  .skill-list span {
+    font-size: 0.8rem;
+  }
+}
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.progress {
+  height: 100%;
+  background-color:rgb(143, 143, 214) ;   width: 0%;
+  transition: width 1s ease-in-out;
+}
